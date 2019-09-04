@@ -16,7 +16,7 @@ android {
     defaultConfig {
         minSdkVersion safeExtGet('minSdkVersion', DEFAULT_MIN_SDK_VERSION)
         targetSdkVersion safeExtGet('targetSdkVersion', DEFAULT_TARGET_SDK_VERSION)
-        resValue "string", "places_api_key", resValue "string", "places_api_key", rootProject.ext.has('env') ? rootProject.ext.get('env') : 'ENTER API KEY'
+        resValue "string", "places_api_key", rootProject.ext.has('env') ? rootProject.ext.get('env') : 'ENTER API KEY'
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
